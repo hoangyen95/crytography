@@ -1,6 +1,5 @@
 package ass1;
 
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -20,9 +19,6 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.ObjectInputStream;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.security.PrivateKey;
 import java.security.PublicKey;
 import java.awt.event.ActionEvent;
@@ -143,19 +139,7 @@ public class advance extends JFrame {
 				    
 				    String path = "" + chooser.getSelectedFile();
 				    pathFolderr.setText(path);
-				    
-//		    	    for (File file : directory) {
-//		              System.out.println(file.getAbsolutePath());
-//				    }
-//				    System.out.println("\n-----------------------");
-//		          
-//				    System.out.println("String[] list():\n");
-//				    int i = 0;
-//		            for (String path : paths) {
-//		        	  i++;
-//		              System.out.println(i + " " + path);
-//		              }
-				    
+			    
 				   }
 				  else {
 				    System.out.println("No Selection ");

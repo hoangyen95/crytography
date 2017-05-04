@@ -45,8 +45,6 @@ public class MD5 {
             StringBuffer input1=(StringBuffer)inputStream.readObject();
             inputStream = new ObjectInputStream(new FileInputStream(inputFile2));
             StringBuffer input2=(StringBuffer)inputStream.readObject();
-//            System.out.println("Digest(in hex format):: " + input1.toString());
-//            System.out.println("Digest(in hex format):: " + input2.toString());
             flag = input1.toString().equals(input2.toString());
         } catch (Exception ex) {
             ex.printStackTrace();
